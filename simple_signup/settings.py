@@ -149,6 +149,7 @@ ACCOUNT_UNIQUE_EMAIL = True
 # ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_LOGIN_METHODS = {'email'}
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_FORMS = {'signup': 'sign.models.BasicSignupForm'}
 
 # SOCIALACCOUNT_PROVIDERS = {
 #     'google': {
