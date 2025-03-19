@@ -4,8 +4,6 @@ from django import forms
 from allauth.account.forms import SignupForm
 from django.contrib.auth.models import Group
 
-
-
 class BaseRegisterForm(UserCreationForm):
     email = forms.EmailField(label = "Email")
     first_name = forms.CharField(label = "Имя")
@@ -19,7 +17,6 @@ class BaseRegisterForm(UserCreationForm):
                   "email",
                   "password1",
                   "password2", )
-
 
 class BasicSignupForm(SignupForm):
 
